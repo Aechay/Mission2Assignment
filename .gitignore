@@ -5,6 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.sln.[Dd]ot[Ss]ettings.user
 .idea/
 
 # Build results
