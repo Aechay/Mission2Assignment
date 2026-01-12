@@ -1,7 +1,23 @@
 namespace Mission2Assignment;
 
-public class CalculateStuff
+public class DiceFunctions
 {
+    private static Random _rand = new Random();
+    public int[] RollDice(int numRolls)
+    {
+        
+        int[] results = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // One 0 for each possible result of rolling 2 6-sided die, 2-12
+        for (int i = 0; i < numRolls; i++)
+        {
+            int d1 = _rand.Next(1, 7); // Roll dice 1 (random number 1-6)
+            int d2 = _rand.Next(1, 7); // Roll dice 2 (random number 1-6)
+
+            int roll = d1 + d2; // Add the 2 rolls together
+            results[roll - 2]++;
+        }
+
+        return results; // Return the sum
+    }
     public double[] CalculateResults(int[] results, int rollNum)
     {
         double[] finalTally = {0,0,0,0,0,0,0,0,0,0,0}; // Initialize an array of doubles with enough space for everything
