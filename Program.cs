@@ -30,6 +30,7 @@ internal class Program
         
         for (int i = 0; i < 11; i++)
         {
+            // i + 2 because index zero is for dice roll of 2
             Console.WriteLine((i + 2) + ": " + cs.NumAsterisks(percentages[i])); // Print the number and the asterisks
         }
         

@@ -12,3 +12,4 @@
 /Users/alijahwhitney/Library/CloudStorage/Box-Box/School/Winter 2026/IS 413/Mission 2/Mission2Assignment/obj/Debug/net10.0/Mission2Assignment.pdb
 /Users/alijahwhitney/Library/CloudStorage/Box-Box/School/Winter 2026/IS 413/Mission 2/Mission2Assignment/obj/Debug/net10.0/Mission2Assignment.genruntimeconfig.cache
 /Users/alijahwhitney/Library/CloudStorage/Box-Box/School/Winter 2026/IS 413/Mission 2/Mission2Assignment/obj/Debug/net10.0/ref/Mission2Assignment.dll
+/Users/alijahwhitney/Library/CloudStorage/Box-Box/School/Winter 2026/IS 413/Mission 2/Mission2Assignment/obj/Debug/net10.0/Mission2Assignment.sourcelink.json
