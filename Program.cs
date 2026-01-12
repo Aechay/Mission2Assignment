@@ -11,16 +11,14 @@ internal class Program
         
         
         Console.WriteLine("Welcome to the dice throwing simulator!" 
-                          + Environment.NewLine 
+                          + Environment.NewLine // \n would probably work here too... This just seemed safer
                           + "How many dice rolls would you like to simulate?");
         
         // It was throwing a fit about me just using Parse, so I switched to TryParse which has slightly different syntax
         Int32.TryParse(Console.ReadLine(), out int numRolls);
         
         int[] results = df.RollDice(numRolls);
-            
-
-
+        
         double[] percentages = df.CalculateResults(results, numRolls); // Calls the CalculateResults method
         
         Console.WriteLine("DICE ROLLING SIMULATION RESULTS" 
