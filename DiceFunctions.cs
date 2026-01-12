@@ -6,21 +6,21 @@ public class DiceFunctions
     public int[] RollDice(int numRolls)
     {
         
-        int[] results = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // One 0 for each possible result of rolling 2 6-sided die, 2-12
+        int[] results = new int[11]; // One 0 for each possible result of rolling 2 6-sided die, 2-12
         for (int i = 0; i < numRolls; i++)
         {
             int d1 = _rand.Next(1, 7); // Roll dice 1 (random number 1-6)
             int d2 = _rand.Next(1, 7); // Roll dice 2 (random number 1-6)
 
             int roll = d1 + d2; // Add the 2 rolls together
-            results[roll - 2]++;
+            results[roll - 2]++; // In the results array, increment the number in the position corresponding to the roll by 1
         }
 
-        return results; // Return the sum
+        return results; // Return the results array
     }
     public double[] CalculateResults(int[] results, int rollNum)
     {
-        double[] finalTally = {0,0,0,0,0,0,0,0,0,0,0}; // Initialize an array of doubles with enough space for everything
+        double[] finalTally = new double[11]; // Initialize an array of doubles with enough space for everything
         for (int i = 0; i < 11; i++)
         {
             int thisNum = results[i]; // grab the number of rolls matching the current iteration (num of rolls equaling 2 for i=0)
