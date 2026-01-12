@@ -25,7 +25,9 @@ internal class Program
         Console.WriteLine("DICE ROLLING SIMULATION RESULTS" 
                           + Environment.NewLine + Environment.NewLine 
                           + "Each \"*\" represents 1% of the total number of rolls."
-                          + Environment.NewLine + "Total number of rolls = " +  numRolls + "."
+                          + Environment.NewLine 
+                          + "Total number of rolls = " 
+                          +  numRolls + "."
                           +  Environment.NewLine);
         
         for (int i = 0; i < 11; i++)
